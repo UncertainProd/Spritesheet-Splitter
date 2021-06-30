@@ -3,7 +3,7 @@
 
 <div>requires:  
     <ul>
-        <li><a href="www.python.org">python</a> (with pip included)</li>
+        <li><a href="https://www.python.org">python</a> (with pip included)</li>
         <li>Pillow <code>pip install Pillow</code></li>
         <li>Your spritesheet and your XML files (both in one folder with nothing other than these files and the python script inside that folder)</li>
     </ul>
