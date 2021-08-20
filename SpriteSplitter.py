@@ -3,6 +3,7 @@ from PIL import Image
 from sys import argv
 
 name = argv[1] # Eg: BOYFRIEND
+file_base_name = argv[2] if len(argv) > 2 else None
 
 imagepath = name+".png"
 xmlpath = name + ".xml"
@@ -24,5 +25,6 @@ for i, obj in enumerate(coord_sets):
 	posename = obj.get('name')
 	if (x1, y1) not in coord_list:
 		im1 = im.crop((x1, y1, x1+w, y1+h))
-		im1.save(f"{name}-{posename}-{i}.png")
+		save_name = f"{file_base_name}-{i}.png" if file_base_name else f"{name}-{posename}-{i}.png"
+		im1.save(save_name)
 		coord_list.append((x1, y1))
