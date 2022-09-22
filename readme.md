@@ -1,3 +1,6 @@
+# [UPDATE] This tool is currently deprecated and it's functionality has already been added into the spritesheet and xml generator.
+A bit of a late update, but the spritesheet and xml generator already supports splitting spritesheets. Use that tool instead: <a href="https://github.com/UncertainProd/FnF-Spritesheet-and-XML-Maker">Spritesheet and XML generator for FNF</a>
+
 # Spritesheet Splitter
 ## A quick little python script that can split pre-existing spritesheets into a bunch of png images using its XML
 
